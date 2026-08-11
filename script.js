@@ -16,7 +16,7 @@ shareButton.addEventListener("click", async () => {
 const currentPath = window.location.pathname.includes("/store/") ? "/store/" : "/";
 const shareUrl = `${window.location.origin}${currentPath}`;
 
-```
+
 try {
   await navigator.clipboard.writeText(shareUrl);
   shareButton.textContent = "Copied!";
@@ -27,7 +27,7 @@ try {
 window.setTimeout(() => {
   shareButton.textContent = "Share";
 }, 1800);
-```
+
 
 });
 }
@@ -43,7 +43,7 @@ stickerShareButton.addEventListener("click", async () => {
 const currentPath = window.location.pathname.includes("/store/") ? "/store/" : "/";
 const shareUrl = `${window.location.origin}${currentPath}`;
 
-```
+
 try {
   await navigator.clipboard.writeText(shareUrl);
   stickerShareButton.textContent = "Copied!";
@@ -54,7 +54,7 @@ try {
 window.setTimeout(() => {
   stickerShareButton.textContent = "Share";
 }, 1800);
-```
+
 
 });
 }
