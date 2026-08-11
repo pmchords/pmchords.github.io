@@ -283,6 +283,12 @@ img {
   color: #6e655c;
 }
 
+/* Space between product cards */
+
+.product-spacer {
+height: 32px;
+}
+
 @media (max-width: 800px) {
   .page-shell {
     padding: 16px;
