@@ -113,8 +113,6 @@ img {
   box-shadow: 0 8px 24px rgba(17, 17, 17, 0.12);
 }
 
-/* Product Card stays exactly the same */
-
 .product-card {
   border-radius: 24px;
   background: var(--panel);
@@ -190,8 +188,6 @@ img {
   background: var(--panel);
 }
 
-/* Keep the product card text dark */
-
 .product-details h2,
 .product-details .price {
   color: #1d1a17;
@@ -236,8 +232,6 @@ img {
   gap: 10px;
   flex-wrap: wrap;
 }
-
-/* Keep buttons exactly as before */
 
 .btn-share {
   background: transparent;
