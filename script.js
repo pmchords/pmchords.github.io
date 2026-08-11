@@ -1,20 +1,17 @@
-const buttons = document.querySelectorAll(".add-to-cart");
-const shareButtons = document.querySelectorAll(".share-button");
+const button = document.getElementById("add-to-cart");
+const shareButton = document.getElementById("share-button");
 const aboutLink = document.getElementById("about-link");
 const aboutPopover = document.getElementById("about-popover");
 
-buttons.forEach((button) => {
+if (button) {
   button.textContent = "Sold Out";
   button.disabled = true;
   button.style.opacity = "0.8";
-});
+}
 
-shareButtons.forEach((shareButton) => {
+if (shareButton) {
   shareButton.addEventListener("click", async () => {
-    const currentPath = window.location.pathname.includes("/store/")
-      ? "/store/"
-      : "/";
-
+    const currentPath = window.location.pathname.includes("/store/") ? "/store/" : "/";
     const shareUrl = `${window.location.origin}${currentPath}`;
 
     try {
@@ -28,12 +25,11 @@ shareButtons.forEach((shareButton) => {
       shareButton.textContent = "Share";
     }, 1800);
   });
-});
+}
 
 if (aboutLink && aboutPopover) {
   const togglePopover = (event) => {
     event.preventDefault();
-
     const isHidden = aboutPopover.hidden;
     aboutPopover.hidden = !isHidden;
   };
@@ -41,10 +37,7 @@ if (aboutLink && aboutPopover) {
   aboutLink.addEventListener("click", togglePopover);
 
   document.addEventListener("click", (event) => {
-    if (
-      !aboutPopover.contains(event.target) &&
-      event.target !== aboutLink
-    ) {
+    if (!aboutPopover.contains(event.target) && event.target !== aboutLink) {
       aboutPopover.hidden = true;
     }
   });
