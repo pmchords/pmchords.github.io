@@ -1,6 +1,6 @@
 const button = document.getElementById("add-to-cart");
-const stickerButton = document.getElementById("sticker-add-to-cart");
 const shareButton = document.getElementById("share-button");
+const stickerButton = document.getElementById("sticker-add-to-cart");
 const stickerShareButton = document.getElementById("sticker-share-button");
 const aboutLink = document.getElementById("about-link");
 const aboutPopover = document.getElementById("about-popover");
@@ -11,35 +11,53 @@ button.disabled = true;
 button.style.opacity = "0.8";
 }
 
+if (shareButton) {
+shareButton.addEventListener("click", async () => {
+const currentPath = window.location.pathname.includes("/store/") ? "/store/" : "/";
+const shareUrl = `${window.location.origin}${currentPath}`;
+
+```
+try {
+  await navigator.clipboard.writeText(shareUrl);
+  shareButton.textContent = "Copied!";
+} catch (error) {
+  shareButton.textContent = "Share";
+}
+
+window.setTimeout(() => {
+  shareButton.textContent = "Share";
+}, 1800);
+```
+
+});
+}
+
 if (stickerButton) {
 stickerButton.textContent = "Sold Out";
 stickerButton.disabled = true;
 stickerButton.style.opacity = "0.8";
 }
 
-const setupShareButton = (shareButton) => {
-if (shareButton) {
-shareButton.addEventListener("click", async () => {
+if (stickerShareButton) {
+stickerShareButton.addEventListener("click", async () => {
 const currentPath = window.location.pathname.includes("/store/") ? "/store/" : "/";
-const shareUrl = ${window.location.origin}${currentPath};
+const shareUrl = `${window.location.origin}${currentPath}`;
 
-  try {
-    await navigator.clipboard.writeText(shareUrl);
-    shareButton.textContent = "Copied!";
-  } catch (error) {
-    shareButton.textContent = "Share";
-  }
-
-  window.setTimeout(() => {
-    shareButton.textContent = "Share";
-  }, 1800);
-});
-
+```
+try {
+  await navigator.clipboard.writeText(shareUrl);
+  stickerShareButton.textContent = "Copied!";
+} catch (error) {
+  stickerShareButton.textContent = "Share";
 }
-};
 
-setupShareButton(shareButton);
-setupShareButton(stickerShareButton);
+window.setTimeout(() => {
+  stickerShareButton.textContent = "Share";
+}, 1800);
+```
+
+});
+}
 
 if (aboutLink && aboutPopover) {
 const togglePopover = (event) => {
