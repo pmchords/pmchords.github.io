@@ -1,4 +1,3 @@
-```javascript
 const buttons = document.querySelectorAll(".add-to-cart");
 const shareButtons = document.querySelectorAll(".share-button");
 const aboutLink = document.getElementById("about-link");
@@ -50,4 +49,3 @@ if (aboutLink && aboutPopover) {
     }
   });
 }
-```
