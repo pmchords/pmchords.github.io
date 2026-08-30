@@ -261,7 +261,7 @@ img {
   top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
-  width: min(350px, 86vw);
+  width: min(354px, 86vw);
   background: var(--panel);
   border: 1px solid rgba(17, 17, 17, 0.08);
   border-radius: 14px;
