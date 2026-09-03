@@ -301,18 +301,25 @@ img {
   top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
+
   width: min(360px, 86vw);
+
   background: var(--panel);
   border: 1px solid rgba(17, 17, 17, 0.08);
   border-radius: 14px;
   box-shadow: 0 12px 28px rgba(17, 17, 17, 0.12);
+
   padding: 14px 16px;
+
   z-index: 20;
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.15s ease, visibility 0.15s ease;
+
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease;
 }
 
 .request-wrapper:hover .request-popover,
