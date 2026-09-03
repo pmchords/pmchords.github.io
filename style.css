@@ -403,18 +403,18 @@ img {
   text-decoration: none;
 }
 
-a[href^="mailto:"] {
-  color: #0067C5;
+.email-link {
+  color: #8f8a91;
   text-decoration: none;
 }
 
-a[href^="mailto:"]:visited {
-  color: #0067C5;
+.email-link:visited {
+  color: #8f8a91;
   text-decoration: none;
 }
 
-a[href^="mailto:"]:hover {
-  color: #005AAB;
+.email-link:hover {
+  color: #77727a;
   text-decoration: none;
 }
 
