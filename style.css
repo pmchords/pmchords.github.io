@@ -363,8 +363,25 @@ img {
   opacity: 0.7;
 }
 
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legal-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  color: var(--text);
+}
+
 .product-spacer {
-height: 32px;
+  height: 32px;
 }
 
 @media (max-width: 800px) {
