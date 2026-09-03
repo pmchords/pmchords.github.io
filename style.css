@@ -403,6 +403,21 @@ img {
   text-decoration: none;
 }
 
+a[href^="mailto:"] {
+  color: #0067C5;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:visited {
+  color: #0067C5;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+  color: #005AAB;
+  text-decoration: none;
+}
+
 .product-spacer {
   height: 32px;
 }
