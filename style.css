@@ -281,6 +281,78 @@ img {
   margin-top: 16px;
 }
 
+.bottom-info {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0 8px;
+}
+
+.before-ordering-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.before-ordering-link {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.before-ordering-link:hover {
+  color: var(--text);
+}
+
+.before-ordering-popover {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(360px, 86vw);
+
+  background: var(--panel);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(17, 17, 17, 0.12);
+
+  padding: 14px 16px;
+
+  z-index: 20;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease;
+}
+
+.before-ordering-wrapper:hover .before-ordering-popover,
+.before-ordering-wrapper:focus-within .before-ordering-popover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.before-ordering-popover p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #6e655c;
+}
+
+.before-ordering-popover a {
+  color: #1d1a17;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.before-ordering-popover a:hover {
+  opacity: 0.7;
+}
+
 .product-spacer {
 height: 32px;
 }
