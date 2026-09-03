@@ -367,17 +367,22 @@ img {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--muted);
-  font-size: 0.9rem;
+  color: #b8a9d9;
+  font-size: 0.82rem;
 }
 
 .legal-links a {
-  color: var(--muted);
+  color: #b8a9d9;
   text-decoration: none;
 }
 
+.legal-links a:visited {
+  color: #b8a9d9;
+}
+
 .legal-links a:hover {
-  color: var(--text);
+  color: #d0c5e8;
+  text-decoration: none;
 }
 
 .product-spacer {
