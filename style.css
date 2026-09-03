@@ -281,6 +281,43 @@ img {
   margin-top: 16px;
 }
 
+.request-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.request-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(360px, 86vw);
+  background: var(--panel);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(17, 17, 17, 0.12);
+  padding: 14px 16px;
+  z-index: 20;
+}
+
+.request-popover p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #6e655c;
+}
+
+.request-popover a {
+  color: #1d1a17;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.request-popover a:hover {
+  opacity: 0.7;
+}
+
 .product-spacer {
 height: 32px;
 }
