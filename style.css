@@ -367,21 +367,21 @@ img {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #b8a9d9;
+  color: #8f8a91;
   font-size: 0.82rem;
 }
 
 .legal-links a {
-  color: #b8a9d9;
+  color: #8f8a91;
   text-decoration: none;
 }
 
 .legal-links a:visited {
-  color: #b8a9d9;
+  color: #8f8a91;
 }
 
 .legal-links a:hover {
-  color: #d0c5e8;
+  color: #b8b0b8;
   text-decoration: none;
 }
 
