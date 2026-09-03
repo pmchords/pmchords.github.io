@@ -315,10 +315,9 @@ img {
 .before-ordering-popover {
   position: absolute;
   bottom: calc(100% + 4px);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
 
-  width: min(360px, 86vw);
+  width: 360px;
 
   background: var(--panel);
   border: 1px solid rgba(17, 17, 17, 0.08);
@@ -334,8 +333,8 @@ img {
   pointer-events: none;
 
   transition:
-    opacity 0.15s ease,
-    visibility 0.15s ease;
+    opacity 0.25s ease,
+    visibility 0.25s ease;
 }
 
 .before-ordering-wrapper:hover .before-ordering-popover,
