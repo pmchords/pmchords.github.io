@@ -385,6 +385,24 @@ img {
   text-decoration: none;
 }
 
+.legal-back {
+  margin-top: 32px;
+}
+
+.legal-back a {
+  color: #b8a9d9;
+  text-decoration: none;
+}
+
+.legal-back a:visited {
+  color: #b8a9d9;
+}
+
+.legal-back a:hover {
+  color: #d0c5e8;
+  text-decoration: none;
+}
+
 .product-spacer {
   height: 32px;
 }
