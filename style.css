@@ -437,16 +437,18 @@ img {
 }
 
 .withdrawal-link {
-  color: #9f9894;
+  color: #8f8a91;
   text-decoration: none;
 }
 
 .withdrawal-link:visited {
-  color: #9f9894;
+  color: #8f8a91;
+  text-decoration: none;
 }
 
 .withdrawal-link:hover {
-  color: #b9aea2;
+  color: #77727a;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
