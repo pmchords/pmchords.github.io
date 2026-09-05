@@ -422,6 +422,20 @@ img {
   height: 32px;
 }
 
+.legal-content p {
+  color: var(--muted);
+}
+
+.legal-content h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.legal-content h2 {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
 @media (max-width: 800px) {
   .page-shell {
     padding: 16px;
