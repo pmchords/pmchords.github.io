@@ -281,6 +281,21 @@ img {
   margin-top: 16px;
 }
 
+.about-popover a {
+  color: #6e655c;
+  text-decoration: none;
+}
+
+.about-popover a:visited {
+  color: #6e655c;
+  text-decoration: none;
+}
+
+.about-popover a:hover {
+  color: #6e655c;
+  text-decoration: none;
+}
+
 .bottom-info {
   display: flex;
   flex-direction: column;
