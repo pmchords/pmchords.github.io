@@ -284,6 +284,7 @@ img {
 .about-popover a {
   color: #6e655c;
   text-decoration: none;
+  font-size: inherit;
 }
 
 .about-popover a:visited {
