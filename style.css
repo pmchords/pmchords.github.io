@@ -438,8 +438,7 @@ img {
 
 .withdrawal-link {
   color: #9f9894;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .withdrawal-link:visited {
