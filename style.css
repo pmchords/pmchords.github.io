@@ -434,6 +434,21 @@ img {
   text-decoration: none;
 }
 
+.privacy-link {
+  color: #8f8a91;
+  text-decoration: none;
+}
+
+.privacy-link:visited {
+  color: #8f8a91;
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  color: #77727a;
+  text-decoration: none;
+}
+
 .product-spacer {
   height: 32px;
 }
