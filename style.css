@@ -134,13 +134,6 @@ img {
   box-shadow: none;
 }
 
-.request-button:disabled:hover,
-#sticker-request-button:disabled:hover,
-.btn-share:hover,
-.btn-secondary:disabled:hover {
-  transform: none;
-}
-
 .product-card {
   border-radius: 24px;
   background: var(--panel);
