@@ -124,11 +124,12 @@ img {
   border: 1px solid var(--accent);
   opacity: 0.8;
   padding: 8px 12px;
-  font: inherit;
-  font-weight: 600;
   font-size: 0.85rem;
   line-height: 1.2;
-  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   transform: none;
   box-shadow: none;
 }
