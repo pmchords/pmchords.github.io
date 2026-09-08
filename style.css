@@ -106,14 +106,14 @@ img {
 }
 
 .btn:hover {
-  transform: translateY(-0.6px);
+  transform: translateY(-1px);
 }
 
 .request-button:disabled:hover,
 #sticker-request-button:disabled:hover,
 .btn-share:hover,
 .btn-secondary:disabled:hover {
-  transform: translateY(-0.6px);
+  transform: translateY(-1px);
   
 }
 .btn-primary {
@@ -139,7 +139,7 @@ img {
   font-family: inherit;
   font-size: 0.85rem;
   font-weight: 600;
-  line-height: 0.85;
+  line-height: 1.02;
   
   display: inline-flex;
   align-items: center;
