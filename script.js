@@ -132,6 +132,16 @@ if (aboutLink && aboutPopover) {
   });
 }
 
+const legalLinks = document.querySelectorAll(".legal-links a");
+
+if (!SHOP_ACTIVE) {
+  legalLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+    });
+  });
+}
+
 if (beforeOrderingWrapper && !SHOP_ACTIVE) {
   beforeOrderingWrapper.classList.add("shop-inactive");
 }
