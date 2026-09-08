@@ -37,26 +37,22 @@ if (requestButton) {
   requestButton.textContent = "Request";
   requestButton.disabled = !SHOP_ACTIVE;
 
-  if (!SHOP_ACTIVE) {
-    requestButton.style.opacity = "0.45";
-    requestButton.style.cursor = "default";
-  } else {
-    requestButton.style.opacity = "";
-    requestButton.style.cursor = "";
-  }
+if (!SHOP_ACTIVE) {
+  requestButton.style.cursor = "default";
+} else {
+  requestButton.style.cursor = "";
+}
 }
 
 if (stickerRequestButton) {
   stickerRequestButton.textContent = "Request";
   stickerRequestButton.disabled = !SHOP_ACTIVE;
 
-  if (!SHOP_ACTIVE) {
-    stickerRequestButton.style.opacity = "0.45";
-    stickerRequestButton.style.cursor = "default";
-  } else {
-    stickerRequestButton.style.opacity = "";
-    stickerRequestButton.style.cursor = "";
-  }
+ if (!SHOP_ACTIVE) {
+  stickerRequestButton.style.cursor = "default";
+} else {
+  stickerRequestButton.style.cursor = "";
+}
 }
 
 if (SHOP_ACTIVE) {
