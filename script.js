@@ -16,7 +16,8 @@ const stickerShareButton = document.getElementById("sticker-share-button");
 
 const aboutLink = document.getElementById("about-link");
 const aboutPopover = document.getElementById("about-popover");
-const storeStatus = document.getElementById("store-status");
+
+const beforeOrderingWrapper = document.querySelector(".before-ordering-wrapper");
 
 if (button) {
   button.textContent = "Sold Out";
@@ -135,8 +136,6 @@ if (aboutLink && aboutPopover) {
   });
 }
 
-if (storeStatus) {
-  storeStatus.textContent = SHOP_ACTIVE
-    ? "Store online"
-    : "Store offline";
+if (beforeOrderingWrapper && !SHOP_ACTIVE) {
+  beforeOrderingWrapper.classList.add("shop-inactive");
 }
