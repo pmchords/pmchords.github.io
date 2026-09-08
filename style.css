@@ -106,14 +106,14 @@ img {
 }
 
 .btn:hover {
-  transform: translateY(-0.8px);
+  transform: translateY(-0.6px);
 }
 
 .request-button:disabled:hover,
 #sticker-request-button:disabled:hover,
 .btn-share:hover,
 .btn-secondary:disabled:hover {
-  transform: translateY(-0.8px);
+  transform: translateY(-0.6px);
   
 }
 .btn-primary {
@@ -131,7 +131,7 @@ img {
   border: 1px solid var(--accent);
   opacity: 0.8;
 
-  padding: 7px 11px;
+  padding: 6px 10px;
   font-size: 0.85rem;
   line-height: 1.2;
 
