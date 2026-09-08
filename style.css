@@ -118,6 +118,13 @@ img {
   box-shadow: none;
 }
 
+.request-button:hover,
+#sticker-request-button:hover,
+.btn-share:hover,
+.btn-secondary:hover {
+  transform: none;
+}
+
 .btn:hover {
   transform: translateY(-1px);
 }
