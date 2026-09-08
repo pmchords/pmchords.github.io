@@ -106,7 +106,7 @@ img {
 }
 
 .request-button:disabled {
-  color: #5f5a56;
+  color: #3f3b38;
   transform: none;
   box-shadow: none;
 }
