@@ -4,7 +4,7 @@
 // true  = Store online
 // =====================================================
 
-const SHOP_ACTIVE = false;
+const SHOP_ACTIVE = true;
 
 const button = document.getElementById("add-to-cart");
 const shareButton = document.getElementById("share-button");
