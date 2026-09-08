@@ -106,9 +106,16 @@ img {
 }
 
 .btn:hover {
-  transform: translateY(-0.4px);
+  transform: translateY(-0.8px);
 }
 
+.request-button:disabled:hover,
+#sticker-request-button:disabled:hover,
+.btn-share:hover,
+.btn-secondary:disabled:hover {
+  transform: translateY(-0.8px);
+  
+}
 .btn-primary {
   text-decoration: none;
   display: inline-block;
@@ -124,22 +131,16 @@ img {
   border: 1px solid var(--accent);
   opacity: 0.8;
 
-  width: auto;
-  height: auto;
-  padding: 8px 12px;
-  margin: 0;
-
-  font-family: inherit;
+  padding: 7px 11px;
   font-size: 0.85rem;
-  font-weight: 600;
   line-height: 1.2;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  box-sizing: border-box;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .product-card {
