@@ -106,7 +106,9 @@ img {
 }
 
 .request-button:disabled {
-  opacity: 0.85;
+  opacity: 1;
+  color: #8f8a91;
+  border-color: rgba(17, 17, 17, 0.16);
   transform: none;
   box-shadow: none;
 }
