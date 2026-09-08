@@ -493,28 +493,9 @@ img {
 }
 
 .store-status {
-  display: flex;
-  align-items: center;
-  gap: 7px;
+  margin-left: 12px;
   color: #8f8a91;
   font-size: 0.7rem;
-}
-
-.store-status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #5a252b;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.store-status-dot.online {
-  background: #4f7658;
-}
-
-.store-status-dot.offline {
-  background: #5a252b;
 }
 
 @media (max-width: 800px) {
