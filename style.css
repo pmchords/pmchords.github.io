@@ -111,6 +111,9 @@ img {
   color: white;
   border: 1px solid var(--accent);
   opacity: 0.8;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  line-height: 1.2;
   transform: none;
   box-shadow: none;
 }
