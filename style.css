@@ -493,9 +493,11 @@ img {
 }
 
 .store-status {
-  margin-left: 12px;
+  margin-left: 16px;
   color: #8f8a91;
   font-size: 0.7rem;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 @media (max-width: 800px) {
