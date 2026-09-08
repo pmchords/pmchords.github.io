@@ -105,26 +105,6 @@ img {
   cursor: default;
 }
 
-.request-button:disabled,
-#sticker-request-button:disabled {
-  background: var(--accent);
-  color: white;
-  border: 1px solid var(--accent);
-  opacity: 0.8;
-  padding: 8px 12px;
-  font-size: 0.85rem;
-  line-height: 1.2;
-  transform: none;
-  box-shadow: none;
-}
-
-.request-button:hover,
-#sticker-request-button:hover,
-.btn-share:hover,
-.btn-secondary:hover {
-  transform: none;
-}
-
 .btn:hover {
   transform: translateY(-1px);
 }
@@ -135,6 +115,29 @@ img {
   background: var(--accent);
   color: white;
   box-shadow: 0 8px 24px rgba(17, 17, 17, 0.12);
+}
+
+.request-button:disabled,
+#sticker-request-button:disabled {
+  background: var(--accent);
+  color: white;
+  border: 1px solid var(--accent);
+  opacity: 0.8;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  border-radius: 999px;
+  transform: none;
+  box-shadow: none;
+}
+
+.request-button:disabled:hover,
+#sticker-request-button:disabled:hover,
+.btn-share:hover,
+.btn-secondary:disabled:hover {
+  transform: none;
 }
 
 .product-card {
