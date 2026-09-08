@@ -340,6 +340,10 @@ img {
   color: var(--text);
 }
 
+.before-ordering-wrapper.shop-inactive .before-ordering-link:hover {
+  color: var(--muted);
+}
+
 .before-ordering-popover {
   position: absolute;
   bottom: calc(100% + 4px);
