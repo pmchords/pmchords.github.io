@@ -61,13 +61,33 @@ if (stickerRequestButton) {
 if (SHOP_ACTIVE) {
   if (requestButton) {
     requestButton.addEventListener("click", () => {
-      window.location.href = "mailto:pmchordshq@gmail.com";
+      window.location.href =
+        "mailto:pmchordshq@gmail.com" +
+        "?subject=PM%20Chords%20%E2%80%93%20Order%20Request" +
+        "&body=Request%20for%20PM%20Chords%20item%28s%29%0A%0A" +
+        "Item%3A%20___%0A" +
+        "Size%3A%20___%0A" +
+        "Quantity%3A%20___%0A" +
+        "Name%3A%20___%0A" +
+        "Shipping%20address%3A%20___%0A%0A" +
+        "Text%20Message%20%28Optional%29%3A%0A%0A" +
+        "I%20would%20like%20to%20order%20the%20item%28s%29%20listed%20above.";
     });
   }
 
   if (stickerRequestButton) {
     stickerRequestButton.addEventListener("click", () => {
-      window.location.href = "mailto:pmchordshq@gmail.com";
+      window.location.href =
+        "mailto:pmchordshq@gmail.com" +
+        "?subject=PM%20Chords%20%E2%80%93%20Order%20Request" +
+        "&body=Request%20for%20PM%20Chords%20item%28s%29%0A%0A" +
+        "Item%3A%20___%0A" +
+        "Size%3A%20___%0A" +
+        "Quantity%3A%20___%0A" +
+        "Name%3A%20___%0A" +
+        "Shipping%20address%3A%20___%0A%0A" +
+        "Text%20Message%20%28Optional%29%3A%0A%0A" +
+        "I%20would%20like%20to%20order%20the%20item%28s%29%20listed%20above.";
     });
   }
 }
