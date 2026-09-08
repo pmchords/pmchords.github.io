@@ -120,10 +120,3 @@ if (storeStatus) {
     ? "Store online"
     : "Store offline";
 }
-</main>
-
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
